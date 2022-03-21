@@ -13,10 +13,10 @@
         "ra-input-rich-text": "^2.9.3"
     },
     "scripts": {
-        "start": "react-scripts start",
+        "start": "CI=false react-scripts start",
         "predeploy": "yarn run build",
         "deploy": "gh-pages -d build",
-        "build": "react-scripts build",
+        "build": "CI=false react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "test:e2e:setup": "cypress install",
